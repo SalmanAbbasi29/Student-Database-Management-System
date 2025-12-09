@@ -1,0 +1,14 @@
+package studentdb.dao;
+
+import java.sql.Connection;
+
+public class TestConnection {
+    public static void main(String[] args){
+        Connection con = DBConnection.getConnection();
+        if(con != null){
+            System.out.println("Connection SUCCESSFUL!");
+        } else {
+            System.out.println("Connection FAILED!");
+        }
+    }
+}
